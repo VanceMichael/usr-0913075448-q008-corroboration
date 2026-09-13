@@ -1,0 +1,6 @@
+services:
+  corroboration:
+    build: .
+    ports: ["8080:8080"]
+    volumes: ["corroboration-data:/data"]
+volumes: {corroboration-data: {}}
